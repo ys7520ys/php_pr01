@@ -3,7 +3,7 @@
     {
       "id": "first_section",
       "section-title": "어떠한 이야기들이<span class='line-break'> </span>존재할까요?",
-      "section-subtitle": "우리는 이러한 이야기들에 대해서 좀 더 깊게 대화해야 합니다.",
+      "section-subtitle": "우리는 이러한 이야기들에 대해서<span class='line-break'></span>좀 더 깊게 대화해야 합니다.",
       "boxes": [
         {
           "id": "box1",

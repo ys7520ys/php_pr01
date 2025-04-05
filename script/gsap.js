@@ -1,5 +1,6 @@
 // GSAP ScrollTrigger 활성화 
 gsap.registerPlugin(ScrollTrigger);
+
 // GSAP matchMedia 활성화
 let mm = gsap.matchMedia();
 
@@ -8,7 +9,10 @@ mm.add("(max-width: 1199px)",() => {
   // 첫 번째 섹션 GSAP 동작
   gsap.fromTo(
     ".firstSection .section-title, .firstSection .section-subtitle", 
-    { opacity: 0, x: -100 }, 
+    { 
+      opacity: 0,
+      x: -100 
+    }, 
     { 
       opacity: 1, 
       x: 0, 
@@ -19,7 +23,10 @@ mm.add("(max-width: 1199px)",() => {
   );
   gsap.fromTo(
     ".firstSection .speech_bubble_mobile", 
-    { opacity: 0, x: 100 }, 
+    { 
+      opacity: 0,
+      x: 100 
+    }, 
     { 
       opacity: 1, 
       x: 0, 
@@ -30,7 +37,10 @@ mm.add("(max-width: 1199px)",() => {
   );
   gsap.fromTo(
     ".firstSection_mobile .swiper_mobile", 
-    { opacity: 0, y: 150 }, 
+    { 
+      opacity: 0,
+      y: 150 
+    }, 
     { 
       opacity: 1, 
       y: 0, 
@@ -43,7 +53,10 @@ mm.add("(max-width: 1199px)",() => {
   // 두 번째 섹션 GSAP 동작
   gsap.fromTo(
     ".secondSection .section-title, .secondSection .section-subtitle", 
-    { opacity: 0, x: -300 }, 
+    { 
+      opacity: 0, 
+      x: -300 
+    }, 
     { 
       opacity: 1, 
       x: 0, 
@@ -60,7 +73,10 @@ mm.add("(max-width: 1199px)",() => {
   );
   gsap.fromTo(
     ".secondSection .speech_bubble_mobile", 
-    { opacity: 0, x: 150 }, 
+    { 
+      opacity: 0, 
+      x: 150 
+    }, 
     { 
       opacity: 1, 
       x: 0, 
@@ -76,7 +92,10 @@ mm.add("(max-width: 1199px)",() => {
   );
   gsap.fromTo(
     ".secondSection ul", 
-    { opacity: 0, y: 200 }, 
+    { 
+      opacity: 0, 
+      y: 200 
+    }, 
     { 
       opacity: 1, 
       y: 0, 
@@ -94,7 +113,10 @@ mm.add("(max-width: 1199px)",() => {
   // 세 번째 섹션 GSAP 동작
   gsap.fromTo(
     ".thirdSection .section-title, .thirdSection .section-subtitle", 
-    { opacity: 0, x: -300 }, 
+    { 
+      opacity: 0, 
+      x: -300 
+    }, 
     { 
       opacity: 1, 
       x: 0, 
@@ -111,7 +133,10 @@ mm.add("(max-width: 1199px)",() => {
   );
   gsap.fromTo(
     ".thirdSection .speech_bubble_mobile", 
-    { opacity: 0, x: 150 }, 
+    { 
+      opacity: 0,
+      x: 150 
+    }, 
     { 
       opacity: 1, 
       x: 0, 
@@ -127,7 +152,10 @@ mm.add("(max-width: 1199px)",() => {
   );
   gsap.fromTo(
     ".thirdSection_mobile .swiper_mobile", 
-    { opacity: 0, y: 200 }, 
+    { 
+      opacity: 0, 
+      y: 200 
+    }, 
     { 
       opacity: 1, 
       y: 0, 
@@ -145,7 +173,10 @@ mm.add("(max-width: 1199px)",() => {
   // 네 번째 섹션 GSAP 동작
   gsap.fromTo(
     ".fourthSection .section-title, .fourthSection .section-subtitle", 
-    { opacity: 0, x: -300 }, 
+    { 
+      opacity: 0, 
+      x: -300 
+    }, 
     { 
       opacity: 1, 
       x: 0, 
@@ -162,7 +193,10 @@ mm.add("(max-width: 1199px)",() => {
   );
   gsap.fromTo(
     ".fourthSection .speech_bubble_mobile", 
-    { opacity: 0, x: 150 }, 
+    { 
+      opacity: 0, 
+      x: 150 
+    }, 
     { 
       opacity: 1, 
       x: 0, 
@@ -178,7 +212,11 @@ mm.add("(max-width: 1199px)",() => {
   );
   gsap.fromTo(
     ".fourthSection_mobile .swiper_mobile .card", 
-    { opacity: 0, rotateX: 0, y: 200}, 
+    { 
+      opacity: 0, 
+      rotateX: 0, 
+      y: 200
+    }, 
     { 
       opacity: 1, 
       y: 0, 
@@ -201,7 +239,10 @@ mm.add("(min-width: 1200px)",() => {
   // 첫 번째 섹션 GSAP 동작
   gsap.fromTo(
     ".firstSection .section-title, .firstSection .section-subtitle, .firstSection .card-title, .firstSection .card-subtitle", 
-    { opacity: 0, y: 100 }, 
+    { 
+      opacity: 0, 
+      y: 100 
+    }, 
     { 
       opacity: 1, 
       y: 0, 
@@ -217,7 +258,10 @@ mm.add("(min-width: 1200px)",() => {
   );
   gsap.fromTo(
     ".firstSection .img_box:nth-of-type(1)", 
-    { opacity: 0, x: -300 }, 
+    { 
+      opacity: 0, 
+      x: -300 
+    }, 
     { 
       opacity: 1, 
       x: 0, 
@@ -233,7 +277,10 @@ mm.add("(min-width: 1200px)",() => {
   );
   gsap.fromTo(
     ".firstSection .img_box:nth-of-type(2)", 
-    { opacity: 0, x: 300 }, 
+    { 
+      opacity: 0, 
+      x: 300 
+    }, 
     { 
       opacity: 1, 
       x: 0, 
@@ -251,7 +298,10 @@ mm.add("(min-width: 1200px)",() => {
   // 두 번째 섹션 GSAP 동작
   gsap.fromTo(
     ".secondSection .text_box", 
-    { opacity: 0, x: 100 }, 
+    { 
+      opacity: 0, 
+      x: 100 
+    }, 
     { 
       opacity: 1, 
       x: 0, 
@@ -267,7 +317,10 @@ mm.add("(min-width: 1200px)",() => {
   );
   gsap.fromTo(
     ".secondSection .img_box>div", 
-    { opacity: 0, x: -100 },
+    { 
+      opacity: 0, 
+      x: -100 
+    },
     { 
       opacity: 1, 
       x: 0, 
@@ -285,7 +338,10 @@ mm.add("(min-width: 1200px)",() => {
   // 세 번째 섹션 GSAP 동작
   gsap.fromTo(
     ".thirdSection .section-title, .thirdSection .section-subtitle", 
-    { opacity: 0, y: 100 }, 
+    { 
+      opacity: 0, 
+      y: 100 
+    }, 
     { 
       opacity: 1, 
       y: 0, 
@@ -301,7 +357,10 @@ mm.add("(min-width: 1200px)",() => {
   );
   gsap.fromTo(
     ".thirdSection .card_box>div:nth-of-type(1)", 
-    { opacity: 0, y: 200 }, 
+    { 
+      opacity: 0, 
+      y: 200 
+    }, 
     { 
       opacity: 1, 
       y: 0, 
@@ -317,7 +376,10 @@ mm.add("(min-width: 1200px)",() => {
   );
   gsap.fromTo(
     ".thirdSection .card_box>div:nth-of-type(2)", 
-    { opacity: 0, y: 200 },
+    { 
+      opacity: 0, 
+      y: 200 
+    },
     { 
       opacity: 1, 
       y: 0, 
@@ -333,7 +395,10 @@ mm.add("(min-width: 1200px)",() => {
   );
   gsap.fromTo(
     ".thirdSection .card_box>div:nth-of-type(3)", 
-    { opacity: 0, y: 200 }, 
+    { 
+      opacity: 0, 
+      y: 200 
+    }, 
     { 
       opacity: 1, 
       y: 0, 
@@ -351,7 +416,10 @@ mm.add("(min-width: 1200px)",() => {
   // 네 번째 섹션 GSAP 동작
   gsap.fromTo(
     "section.fourthSection h2.section-title, section.fourthSection h3.section-subtitle", 
-    { opacity: 0, y: 100 }, 
+    { 
+      opacity: 0, 
+      y: 100 
+    }, 
     { 
       opacity: 1, 
       y: 0, 
