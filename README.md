@@ -15,7 +15,7 @@ PHP 기반 "어스위드(EARTHWITH)" 퍼블리싱 포트폴리오
 HTML / PHP / CSS / JavaScript / Jquery / GSAP / SEO(og,twitter) / favicon(img)
 
 # 폴더 구조
-<pre> ```
+<pre>
 ├── (css)
 │      ├── font.css
 │      ├── media_query.css
@@ -71,7 +71,7 @@ HTML / PHP / CSS / JavaScript / Jquery / GSAP / SEO(og,twitter) / favicon(img)
 ├── index.php
 ├── login.php
 └── README.md
-```</pre> 
+</pre> 
 
 
 # 주요 기능
