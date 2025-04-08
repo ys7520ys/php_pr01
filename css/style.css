@@ -1,8 +1,8 @@
 body{
   overflow-x: hidden;
   font-family: "Pretendard Variable";
-  /* background-color: #f2f2f2; */
 }
+
 /* 데스크탑 헤더 시작 */
 header{
   position: fixed;
@@ -36,7 +36,6 @@ header .mobile_header .mainNav_mobile{
 header .mobile_header .mainNav_mobile li a{ 
   color: white;
 }
-
 header .logo{
   position: absolute;
   top: 50%;
@@ -46,8 +45,6 @@ header .logo{
   font-size: 20px;
   font-weight: 300;
 }
-
-
 header .mainNav{
   position: absolute;
   top: 50%;
@@ -64,8 +61,6 @@ header .mainNav li{
   font-size: 1.1em;
   height: 100%;
 }
-
-
 
 /* 헤더 사이드바 시작 */
 .menuBtn{
@@ -91,7 +86,6 @@ header .mainNav li{
   display: block;
   border-radius: 5px;
 }
-
 
 /* 사이드바 */
 .sidebar{
@@ -159,59 +153,11 @@ ul.subCategory{
   display: block;
 }
 
-
-/*  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 main{
   opacity: 0;
   transform: translateY(-20px);
   transition: transform 0.3s, opacity 0.4s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* swiper_section start */
 .mySwiper {
@@ -247,11 +193,7 @@ main{
 .mySwiper .swiper-pagination-bullet-active {
   background: #ffffff;
 }
-/* swiper_section endd */
-
-
-
-
+/* swiper_section end */
 
 /* first_section start */
 .firstSection{
@@ -268,11 +210,13 @@ main{
   font-size: 60px;
   margin-bottom: 18px;
   color: #333;
+  line-height: 120%;
 }
 .firstSection .section-subtitle{
   text-align: center;
   font-weight: 400;
   font-size: 22px;
+  line-height: 120%;
   color: #333;
 }
 .firstSection .parent_box{
@@ -351,16 +295,9 @@ main{
   background-color: white;
   color: black;
 } 
-
 /* first_section end */
 
-
-
-
-
-
 /* firstSection_mobile start */
-
 .firstSection_mobile{
   margin-top: 20px;
   position: relative;
@@ -368,7 +305,6 @@ main{
 }
 .firstSection_mobile .swiper-wrapper{
   width: 100%;
-  
 }
 .firstSection_mobile .swiper-slide{
   padding: 0px 20px;
@@ -381,8 +317,6 @@ main{
   box-shadow: none;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15); 
 }
-
-
 .firstSection .speech_bubble_mobile{
   position: absolute;
   top: -90px;
@@ -420,9 +354,6 @@ main{
 .firstSection_mobile .swiper-pagination-bullet-active {
   background-color: #ffffff;
 }
-
-
-
 /* firstSection_mobile end */
 
 /* second_section start */
@@ -448,13 +379,13 @@ main{
 .text_box h2.section-title{
   font-size: 60px;
   font-weight: 600;
-  line-height: 1.1;
+  line-height: 120%;
   margin-bottom: 19px;
   color: #333;
 }
 .text_box h3.section-subtitle{
   font-size: 22px;
-  line-height: 1.3;
+  line-height: 120%;
   font-weight: 400;
   color: #333;
 }
@@ -524,7 +455,6 @@ main{
   background-color: white;
   color: black;
 }
-
 .secondSection .speech_bubble_mobile{
   position: absolute;
   top: 90px;
@@ -554,7 +484,6 @@ main{
   rotate: 45deg;
   background-color: #3c3c3c;
 }
-
 /* second_section end */
 
 /* third_section start */
@@ -572,12 +501,14 @@ main{
   font-size: 60px;
   margin-bottom: 18px;
   color: #333;
+  line-height: 120%;
 }
 .thirdSection .section-subtitle{
   text-align: center;
   font-size: 22px;
   margin-bottom: 75px;
   color: #333;
+  line-height: 120%;
 }
 .thirdSection .card_box{
   display: inline-flex;
@@ -641,13 +572,6 @@ main{
   text-decoration: underline;
   transition: color 0.4s ease;
 }
-
-
-
-
-
-
-
 .thirdSection_mobile{
   position: relative;
   display: none;
@@ -730,11 +654,13 @@ section.bannerSection img{
   margin-top: 40px;
   margin-bottom: 18px;
   color: #333;
+  line-height: 120%;
 }
 .fourthSection .section-subtitle{
   font-size: 22px;
   text-align: center;
   color: #333;
+  line-height: 120%;
 }
 .fourthSection .card_box{
   margin-top: 30px;
@@ -777,6 +703,7 @@ section.bannerSection img{
   font-weight: 500;
   margin-bottom: 17px;
   transition: color 0.4s ease;
+  line-height: 120%;
 }
 .fourthSection .card .text_box p.card-subtitle{
   font-weight: 400;
@@ -792,7 +719,6 @@ section.bannerSection img{
   text-decoration: underline;
   transition: color 0.4s ease;
 }
-
 .fourthSection_mobile{
   display: none;
   position: relative;
@@ -840,7 +766,7 @@ footer nav{
 footer nav .footer_info{
   font-size: 14px;
   line-height: 140%;
-  letter-spacing: -2.5%;
+  letter-spacing: -0.35px;
 }
 footer nav .footer_info p{
   color: white;
@@ -850,7 +776,7 @@ footer nav .footer_detailLink{
   display: flex;
   gap: 15px;
   line-height: 140%;
-  letter-spacing: -2.5%;
+  letter-spacing: -0.35px;
   font-size: 14px;
 }
 footer nav .footer_detailLink a{
@@ -872,17 +798,6 @@ footer nav .footer_detailLink a{
   white-space: nowrap;
   border: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* speechBubble start */
 .speech_bubble{
@@ -926,11 +841,6 @@ footer nav .footer_detailLink a{
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); 
 }
 /* speechBubble end */
-
-
-
-
-
 
 /* login start */
 .loginArea{

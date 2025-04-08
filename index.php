@@ -1,27 +1,27 @@
 <?php
-// PHP 데이터 처리
-$data = json_decode(file_get_contents('json/data.json'), true);
-$sections = $data['sections']; // json에 저장된 데이터의 값을 전달하는 버스이다. 여기에 모든 데이터가 담겨서 들어온다.
+  // PHP 데이터 처리
+  $data = json_decode(file_get_contents('json/data.json'), true);
+  $sections = $data['sections']; // json에 저장된 데이터의 값을 전달하는 버스이다. 여기에 모든 데이터가 담겨서 들어온다.
 
-// 데이터 확인용 함수
-function getTextData($value, $defaultMessage = "해당 데이터가 존재하지 않음.") {
-  return !empty($value) ? $value : $defaultMessage;
-}
+  // 데이터 확인용 함수
+  function getTextData($value, $defaultMessage = "해당 데이터가 존재하지 않음.") {
+    return !empty($value) ? $value : $defaultMessage;
+  }
 
-// for first_section
-$first_section = $sections[0];
-$first_sections_boxes = $first_section["boxes"];// boxes배열을 지닌다.
-// for second_section
-$second_section = $sections[1];
-$lists = $second_section["lists"];
-// for third_section
-$third_section = $sections[2];
-$third_cards = $third_section["cards"];
-// for fourth_section
-$fourth_section = $sections[3];
-$fourth_cards = $fourth_section["cards"];
-
+  // for first_section
+  $first_section = $sections[0];
+  $first_sections_boxes = $first_section["boxes"];// boxes배열을 지닌다.
+  // for second_section
+  $second_section = $sections[1];
+  $lists = $second_section["lists"];
+  // for third_section
+  $third_section = $sections[2];
+  $third_cards = $third_section["cards"];
+  // for fourth_section
+  $fourth_section = $sections[3];
+  $fourth_cards = $fourth_section["cards"];
 ?>
+
 <?php include_once $_SERVER["DOCUMENT_ROOT"]."/inc/start.html" ?>
 
   <div class="container">
@@ -75,7 +75,7 @@ $fourth_cards = $fourth_section["cards"];
               <p class="card-subtitle">
                 <?php echo getTextData($first_sections_boxes[0]["card-subtitle"] ?? null) ?>
               </p>
-              <a href="#none" aria-label="자세히 보기">자세히 보기</a>
+              <a href="subPage.php" aria-label="자세히 보기">자세히 보기</a>
             </div>
           </div>
           <div class="img_box">
@@ -87,7 +87,7 @@ $fourth_cards = $fourth_section["cards"];
               <p class="card-subtitle">
                 <?php echo getTextData($first_sections_boxes[1]["card-subtitle"] ?? null) ?>
               </p>
-              <a href="#none" aria-label="자세히 보기">자세히 보기</a>
+              <a href="subPage.php" aria-label="자세히 보기">자세히 보기</a>
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@ $fourth_cards = $fourth_section["cards"];
           <div class="swiper_mobile">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a href="#">
+                <a href="subPage.php">
                   <div class="img_box">
                     <img src="image/sections/wave.jpg" alt="검은색으로 물든 바다 이미지">
                     <div class="text_box">
@@ -121,7 +121,7 @@ $fourth_cards = $fourth_section["cards"];
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="#">
+                <a href="subPage.php">
                   <div class="img_box">
                     <img src="image/sections/space.jpg" alt="정적인 상태의 검은 우주 이미지">
                     <div class="text_box">
@@ -161,7 +161,7 @@ $fourth_cards = $fourth_section["cards"];
               <?php 
                   $i = 1;
                   while ($i <= 7) {
-                    echo "<li>".$lists["list".$i]."</li>";
+                    echo "<li><a href='subPage.php'>".$lists["list".$i]."</a></li>";
                     $i++;
                   }
               ?>
@@ -171,11 +171,11 @@ $fourth_cards = $fourth_section["cards"];
           <div class="img_box desktop-content">
             <div>
               <img src="image/sections/oil_1.jpg" alt="기름의 역사와 시간의 변화를 나타내는 포스터 이미지">
-              <a href="#none">기름의 역사 알아보기</a>
+              <a href="subPage.php">기름의 역사 알아보기</a>
             </div>
             <div>
               <img src="image/sections/oil_2.jpg" alt="바다와 사람의 공생관계를 의미하는 포스터 이미지">
-              <a href="login.html">바다의 기원 알아보러가기</a>
+              <a href="subPage.php">바다의 기원 알아보러가기</a>
             </div>
           </div>
           <div class="speech_bubble_mobile">
@@ -215,7 +215,7 @@ $fourth_cards = $fourth_section["cards"];
                 <p class="card-subtitle">
                   <?php echo getTextData($third_cards[$i]["card-subtitle"] ?? null) ?>
                 </p>
-                <a href="#none">자세히 보러가기</a>
+                <a href="subPage.php">자세히 보러가기</a>
               </div>
             </div>
           <?php endforeach; ?>
@@ -240,7 +240,7 @@ $fourth_cards = $fourth_section["cards"];
                 ++ $i
               ?>
                 <div class="swiper-slide">
-                  <a href="#none">
+                  <a href="subPage.php">
                     <div class="deco_">
                       <div class="img_box">
                         <img src="image/sections/card<?php echo $i+1; ?>.jpg" alt="플라스틱 비닐의 무분별한 사용을 나타내는 이미지">
@@ -289,7 +289,7 @@ $fourth_cards = $fourth_section["cards"];
               <p class="card-subtitle">
                 <?php echo getTextData($fourth_cards[$i]["card-subtitle"] ?? null) ?> 
               </p>
-              <a href="#none">더보기</a>
+              <a href="subPage.php">더보기</a>
             </div>
           </div>
         <?php endforeach; ?>
@@ -311,7 +311,7 @@ $fourth_cards = $fourth_section["cards"];
                 ++$i
               ?>
                 <div class="swiper-slide">
-                  <a href="#none">
+                  <a href="subPage.php">
                     <div class="card">
                       <img class="img_box" src="image/sections/icons/card_icon<?php echo $i+1 ?>.jpg" alt=""> 
                       <div class="text_box">
