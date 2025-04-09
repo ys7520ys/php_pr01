@@ -2,9 +2,10 @@
 PHP 기반 "어스위드(EARTHWITH)" 퍼블리싱 포트폴리오
 
 ## 배포 링크
-<https://subtle-panda-ef9709.netlify.app>
+<https://cheery-banoffee-8f1948.netlify.app>
 
 ## 개요 (OverView)
+<pre>
 실제로 존재하는 사이트는 아니지만 자연환경을 보호하며,
 지구촌의 단합력을 증진하기 위해서 직접 UI,UX를 생각하면서
 제작한 사이트입니다. (HTML, PHP) 두 종류로 구성하였습니다.
@@ -12,10 +13,17 @@ PHP 기반 "어스위드(EARTHWITH)" 퍼블리싱 포트폴리오
 반복적으로 사용되는 header,start,footer 영역을 별도 파일로 분리하여
 공통 모듈화를 진행하였으며, 이를 통해서 코드의 중복을 줄이고 유지보수를 
 용의하게 구성하였습니다.
-
+</pre>
 
 ## 기술 스택 (Tech Stack)
-HTML / PHP / CSS / JavaScript / Jquery / GSAP / SEO(og,twitter) / favicon(img)
+- HTML
+- PHP
+- CSS
+- JavaScript
+- Jquery
+- GSAP
+- SEO(og,twitter)
+- favicon(img)
 
 ## 폴더 구조
 <pre>
@@ -78,12 +86,12 @@ HTML / PHP / CSS / JavaScript / Jquery / GSAP / SEO(og,twitter) / favicon(img)
 
 
 ## 주요 기능
-반응형 웹 (PC/Tablet/Mobile 대응)
-시맨틱 마크업 및 웹 표준 준수
-웹표준, 웹접근성
-애니메이션
+- 반응형 웹 (PC/Tablet/Mobile 대응)
+- 시맨틱 마크업 및 웹 표준 준수
+- 웹표준, 웹접근성
+- 애니메이션
 
 ## 제작자
-이름: 김예성
-이메일: ys7520ys@naver.com
-포트폴리오: "어스위드(EARTHWITH)"
+- 이름: 김예성
+- 이메일: ys7520ys@naver.com
+- 포트폴리오: "어스위드(EARTHWITH)"
